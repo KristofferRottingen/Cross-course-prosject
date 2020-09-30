@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-header {
+body {
   background: url("images/background-homepage.jpg");
   height: 100vh;
   background-size: cover;
