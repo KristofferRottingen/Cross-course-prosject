@@ -40,3 +40,14 @@ footer::after {
   font-size: 25px;
   font-weight: bold;
 }
+
+header {
+  background-image: url("../images/homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Logo {
+  size: 191px;
+  color: white;
+}
