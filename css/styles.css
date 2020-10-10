@@ -1,6 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: auto;
+  margin: auto;
+}
+
+.nav-area {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+.nav-area li {
+  display: inline-block;
+}
+.nav-area li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+.nav-area li a:hover {
+  background: #ffffff;
+  color: #0a3641;
+}
+
+.logo img {
+  padding: 5px 20px;
+  width: 190px;
+  float: left;
+  height: auto;
+}
+
 body {
   background-color: #0a3641;
-  font-family: Din -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
 }
@@ -8,29 +46,6 @@ body {
 h1 {
   font-family: "Times New Roman", Times, serif;
   color: white;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-nav ul {
-  padding: 0px;
-}
-
-.active {
-  background-color: white;
-  color: #0a3641;
 }
 
 footer::before,
@@ -42,12 +57,41 @@ footer::after {
 }
 
 header {
-  background-image: url("../images/homepage.jpg");
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.151),
+      rgba(255, 255, 255, 0.151)
+    ),
+    url("../images/homepage.jpg");
+  height: 100vh;
+  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
 }
 
-.Logo {
-  size: 191px;
-  color: white;
+.punshline {
+  position: absolute;
+  width: 950px;
+  height: 98px;
+  margin: 20% 1%;
+  text-align: center;
+}
+.punshline h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 55px;
+}
+.punshline a {
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 20px;
+  display: inline-block;
 }
