@@ -8,8 +8,7 @@
 }
 
 li,
-a,
-i {
+a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -26,7 +25,7 @@ header {
 
 .logo {
   padding: 5px 20px;
-  width: 190px;
+  width: 200px;
   cursor: pointer;
 }
 
@@ -50,6 +49,11 @@ header {
 }
 
 i {
+  font-size: 23px;
   padding: 9px 25px;
   transition: all 0.3s ease 0s;
+}
+
+.banner {
+  background: url("../images/homepage.jpg");
 }
