@@ -12,8 +12,9 @@ a,
 i {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   color: #0a3641;
+  text-decoration: none;
 }
 
 header {
@@ -22,27 +23,27 @@ header {
   align-items: center;
   padding: 30px 10px;
 }
-.logo img {
+
+.logo {
   padding: 5px 20px;
   width: 190px;
-  float: left;
-  height: auto;
+  cursor: pointer;
 }
 
-.ul.nav__link {
+.nav__links {
   list-style: none;
 }
 
-.ul.nav__link li {
+.nav__links li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 5px 20px;
 }
 
-.ul.nav__link li a {
+.nav__links li a {
   transition: all 0.3s ease 0s;
 }
 
-.ul.nav__link li a:hover {
+.nav__links li a:hover {
   color: #0a3641;
   text-decoration: none;
   text-decoration-color: #ffffff;
