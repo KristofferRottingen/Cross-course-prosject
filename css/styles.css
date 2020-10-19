@@ -54,6 +54,25 @@ i {
   transition: all 0.3s ease 0s;
 }
 
+.pic {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .banner {
-  background: url("../images/homepage.jpg");
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.151),
+      rgba(255, 255, 255, 0.151)
+    ),
+    url("../images/homepage.jpg");
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.banner-content {
 }
