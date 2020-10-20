@@ -100,8 +100,51 @@ i {
   display: inline-block;
 }
 
+.container {
+  width: 100%;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+.container h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #0a3641;
+  color: #ffffff;
+  width: 200px;
+  font-size: 40px;
+  height: 40px;
+  margin-left: 800px;
+}
+
+.men {
+  background-color: #0a3641;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 0;
+  height: 40px;
+  margin-left: 25px;
+}
+
+.row {
+  margin-top: 0px;
+}
+
+img {
+  width: auto;
+}
+
 .jackets-list {
   background-color: #0a3641;
   padding: 0;
   margin: 0;
+}
+
+.product-bottom-text-center {
+  color: #ffffff;
+  padding: 0;
+  margin-left: 25px;
 }
