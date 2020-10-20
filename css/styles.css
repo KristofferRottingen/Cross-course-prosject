@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .navigation {
   box-sizing: border-box;
   margin: 0;
@@ -58,7 +59,7 @@ i {
   transition: all 0.3s ease 0s;
 }
 
-section {
+.frontpage {
   background: linear-gradient(
       rgba(255, 255, 255, 0.151),
       rgba(255, 255, 255, 0.151)
@@ -66,8 +67,8 @@ section {
     url("../images/homepage.jpg");
   height: 100vh;
   padding: 0;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
@@ -97,4 +98,10 @@ section {
   font-size: 16px;
   margin-top: 20px;
   display: inline-block;
+}
+
+.jackets-list {
+  background-color: #0a3641;
+  padding: 0;
+  margin: 0;
 }
