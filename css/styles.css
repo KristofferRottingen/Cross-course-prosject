@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+body {
+  margin: 0;
+  padding: 0;
+}
 .navigation {
   box-sizing: border-box;
   margin: 0;
@@ -62,8 +66,8 @@ section {
     url("../images/homepage.jpg");
   height: 100vh;
   padding: 0;
-  -webkit-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
