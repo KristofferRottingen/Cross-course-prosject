@@ -25,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10px;
+  padding: 0px 10px;
 }
 
 .logo {
@@ -54,8 +54,8 @@ header {
 }
 
 i {
-  font-size: 23px;
-  padding: 9px 25px;
+  font-size: 25px;
+  padding: 9px 100px;
   transition: all 0.3s ease 0s;
 }
 
@@ -124,7 +124,7 @@ i {
 .men {
   background-color: #0a3641;
   color: #ffffff;
-  width: 200px;
+  width: auto;
   font-size: 25px;
   padding: 0;
   height: 40px;
@@ -132,10 +132,13 @@ i {
 }
 
 .row {
-  margin-top: 0px;
+  margin-left: 30px;
+  display: flex;
+  width: auto;
 }
 
 img {
+  margin: 20px;
   width: auto;
 }
 
@@ -148,5 +151,15 @@ img {
 .product-bottom-text-center {
   color: #ffffff;
   padding: 0;
+  margin-left: 25px;
+}
+
+.women {
+  background-color: #0a3641;
+  color: #ffffff;
+  width: auto;
+  font-size: 25px;
+  padding-top: 0px;
+  height: 40px;
   margin-left: 25px;
 }
