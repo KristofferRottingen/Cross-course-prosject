@@ -46,9 +46,31 @@ i {
 }
 
 .logo {
-  padding: 5px 20px;
   width: 200px;
   cursor: pointer;
+}
+
+.men-woman {
+  display: flex;
+  background-color: #0a3641;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.men-woman li {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.men-woman a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  padding: 0px 20px 0px 20;
 }
 
 .frontpage {
