@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+:root {
+  --blue: #0a3641;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--font);
+}
+
+main {
+  margin: 0;
+  padding-bottom: 100px;
+  min-height: 100vh;
 }
 
 .top-navigation {
@@ -16,7 +27,7 @@ body {
 
 li,
 a {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font);
   font-weight: 500;
   font-size: 16px;
   color: #0a3641;
@@ -68,12 +79,13 @@ i {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font);
   color: #ffffff;
   padding: 0px 20px 0px 20;
 }
 
 .frontpage {
+  display: flex;
   background: linear-gradient(
       rgba(255, 255, 255, 0.151),
       rgba(255, 255, 255, 0.151)
@@ -81,99 +93,51 @@ i {
     url("../images/homepage.jpg");
   height: 100vh;
   padding: 0;
-  -webkit-background-size: cover;
+  justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
 }
 
-.punshline {
-  position: absolute;
-  width: 950px;
-  height: 98px;
-  margin: 20% 1%;
-  text-align: center;
-}
 .punshline h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  text-decoration: none;
+  font-family: var(--font);
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 55px;
+  text-shadow: -2px 3px #000000;
 }
-.punshline a {
-  color: #ffffff;
-  border: 3px solid #ffffff;
-  padding: 10px 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.container {
-  width: 100%;
-  margin-top: 0;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
-}
-
-.container h2 {
+.jacket-list {
   display: flex;
-  justify-content: space-between;
+  background-color: var(--blue);
+  justify-content: space-evenly;
   align-items: center;
-  padding: 30px 20px;
-  background-color: #0a3641;
-  color: #ffffff;
-  width: 200px;
-  font-size: 40px;
-  height: 40px;
-  margin-left: 800px;
-  margin-top: auto;
+  flex-wrap: wrap;
+}
+.men h2 {
+  margin-bottom: 25px;
+  width: 100px;
+  position: relative;
+  color: #fff;
+  background-color: var(--blue);
+  text-align: center;
 }
 
-.men {
-  background-color: #0a3641;
-  color: #ffffff;
-  width: auto;
-  font-size: 25px;
-  padding: 0;
-  height: 40px;
-  margin-left: 25px;
+.block {
+  margin-bottom: 25px;
+  width: 100px;
+  position: relative;
+  color: var(--blue);
+  background-color: var(--blue);
+  text-align: center;
 }
 
-.row {
-  margin-left: 30px;
-  display: flex;
-  width: auto;
-}
-
-img {
-  margin: 20px;
-  width: auto;
-}
-
-.jackets-list {
-  background-color: #0a3641;
-  padding: 0;
-  margin: 0;
-}
-
-.product-bottom-text-center {
-  color: #ffffff;
-  padding: 0;
-  margin-left: 25px;
-}
-
-.women {
-  background-color: #0a3641;
-  color: #ffffff;
-  width: auto;
-  font-size: 25px;
-  padding-top: 0px;
-  height: 40px;
-  margin-left: 25px;
+.jacket-list h3 {
+  margin-top: 10px;
+  text-align: left;
+  color: #fff;
+  background-color: var(--blue);
 }
