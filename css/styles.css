@@ -14,7 +14,6 @@ body {
 
 main {
   margin: 0;
-  padding-bottom: 100px;
   min-height: 100vh;
 }
 
@@ -81,45 +80,57 @@ i {
   font-size: 14px;
   font-family: var(--font);
   color: #ffffff;
-  padding: 0px 20px 0px 20;
+  padding: 0px 20px 0px 20px;
 }
 
 .frontpage {
   display: flex;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.151),
-      rgba(255, 255, 255, 0.151)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)),
     url("../images/homepage.jpg");
-  height: 100vh;
+  height: 85vh;
   padding: 0;
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  position: relative;
 }
 
 .punshline h1 {
   position: relative;
   text-decoration: none;
+  top: 25%;
+  left: -25%;
   font-family: var(--font);
-  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 55px;
   text-shadow: -2px 3px #000000;
 }
 .jacket-list {
+  padding: 1rem 1rem 1rem 1rem;
   display: flex;
   background-color: var(--blue);
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 .men h2 {
-  margin-bottom: 25px;
-  width: 100px;
+  text-decoration: underline;
+  font-size: 30px;
+  margin: 20px;
+  width: fit-content;
+  position: relative;
+  color: #fff;
+  background-color: var(--blue);
+  text-align: center;
+}
+
+.women h2 {
+  text-decoration: underline;
+  font-size: 30px;
+  margin: 20px;
+  width: fit-content;
   position: relative;
   color: #fff;
   background-color: var(--blue);
@@ -140,4 +151,64 @@ i {
   text-align: left;
   color: #fff;
   background-color: var(--blue);
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  padding: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.banner-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.151)),
+    url("../images/Cuality-backgruound.jpg");
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 90vh;
+}
+
+.banner-text {
+  position: relative;
+  top: 23%;
+  left: 3%;
+  width: 50%;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  color: #fff;
+  z-index: 5;
+}
+
+.banner-text p {
+  padding: 10px 10px 20px 20px;
+  line-height: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+}
+
+.footer-box {
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 60vh;
+  padding-bottom: 0;
+}
+
+.delivery h3 {
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
+  width: auto;
+}
+
+.icon-section i {
+  color: #fff;
 }
