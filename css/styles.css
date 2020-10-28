@@ -196,7 +196,7 @@ footer {
   background-color: var(--blue);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   height: 60vh;
   padding-bottom: 0;
@@ -211,4 +211,32 @@ footer {
 
 .icon-section i {
   color: #fff;
+}
+
+.footer-search {
+  display: flex;
+  align-items: center;
+  font-family: var(--font);
+}
+
+.search {
+  width: 292px;
+  height: 53px;
+  border: 3px solid var(--blue);
+  border-right: #fff;
+}
+
+input {
+  outline: none;
+}
+
+.search-button {
+  background-color: #fff;
+  padding: 8px 3px 8px 3px;
+  border: 3px solid var(--blue);
+  border-left: #fff;
+}
+
+.footer-search i {
+  color: var(--blue);
 }
