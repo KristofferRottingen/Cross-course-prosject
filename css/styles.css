@@ -211,10 +211,15 @@ footer {
 
 .icon-section i {
   color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-search {
+  padding-top: 15px;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-family: var(--font);
 }
@@ -232,11 +237,13 @@ input {
 
 .search-button {
   background-color: #fff;
-  padding: 8px 3px 8px 3px;
+  padding: 6px 6px 8px 3px;
   border: 3px solid var(--blue);
   border-left: #fff;
 }
 
-.footer-search i {
-  color: var(--blue);
+#icon {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
 }
