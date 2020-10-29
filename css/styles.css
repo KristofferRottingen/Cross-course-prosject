@@ -209,9 +209,11 @@ footer .footer-content p {
   color: #fff;
 }
 
-footer .footer-section p {
+footer .delivery h3,
+footer .delivery p {
   width: 300px;
   line-height: 25px;
+  padding-left: 20px;
 }
 
 footer .social-media {
