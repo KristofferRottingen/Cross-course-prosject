@@ -197,6 +197,7 @@ footer {
 footer .footer-content {
   height: 320px;
   display: flex;
+  justify-content: space-evenly;
 }
 
 footer .footer-content .footer-section {
