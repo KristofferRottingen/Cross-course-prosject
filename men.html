@@ -1,44 +1,134 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/styles.css" rel="stylesheets" />
-    <title>My amazing page</title>
-    <meta
-      name="description"
-      content="This is a page all about my favorite things"
-    />
+    <title>Men | RainyDays</title>
+    <meta name="description" content="Rainydays website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/65aaf5acf6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <section>
-        <div class="mens-jackets">
-          <a href="men/hiking.html">
-            <img
-              src="images/HIKING HERRE.png"
-              alt="mens-jackets hiking"
-              class="hiking"
-          /></a>
-          <a href="men/skiing.html">
-            <img
-              src="images/SKIING.png"
-              alt="mens-jackets skiing"
-              class="skiing"
-          /></a>
-          <a href="men/camping.html">
-            <img
-              src="images/CAMPING.png"
-              alt="mens-jackets camping"
-              class="camping"
-          /></a>
-          <a href="men/canoeing.html">
-            <img
-              src="images/Canoeing.png"
-              alt="mens-jackets canoeing"
-              class="canoeing"
-          /></a>
-        </div>
-      </section>
+      <div class="nav">
+        <img
+          class="logo"
+          href="index.html"
+          src="images/RainyDays_Logo.png"
+          alt="logo"
+        />
+        <nav class="top-navigation">
+          <ul class="nav__links">
+            <li class="upper"><a href="index.html">Home</a></li>
+            <li class="upper"><a href="about.html">About</a></li>
+            <li class="upper"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="checkout.html"
+          ><i class="fas fa-shopping-cart"></i
+        ></a>
+      </div>
+      <div class="men-woman">
+        <ul>
+          <li><a href="men.html">MEN</a></li>
+          <li><a href="woman.html">WOMEN</a></li>
+        </ul>
+      </div>
     </header>
+    <main>
+      <div class="frontpage-men">
+        <div class="headline">
+          <h1>MEN'S JACKETS</h1>
+        </div>
+      </div>
+      <div class="jacket-list">
+        <div class="men">
+          <a href="men.html"><h2>MEN'S JACKETS</h2></a>
+          <a href="men/hiking.html"
+            ><img src="images/HIKING HERRE test.png" alt="Hiking herre jakke"
+          /></a>
+          <h3>HIKING</h3>
+          <h3>kr 1500,-</h3>
+        </div>
+        <div>
+          <h2 class="block">MEN</h2>
+          <a href="men/skiing.html"
+            ><img src="images/SKIING.png" alt="skiing herre jakke"
+          /></a>
+          <h3>SKIING</h3>
+          <h3>kr 1500,-</h3>
+        </div>
+        <div>
+          <h2 class="block">MEN</h2>
+          <a href="men/camping.html"
+            ><img src="images/CAMPING.png" alt="Camping herre jakke"
+          /></a>
+          <h3>CAMPING</h3>
+          <h3>kr 1500,-</h3>
+        </div>
+        <div>
+          <h2 class="block">MEN</h2>
+          <a href="men/canoeing.html"
+            ><img src="images/Canoeing.png" alt="Canoeing herre jakke"
+          /></a>
+          <h3>CANOEING</h3>
+          <h3>kr 1500,-</h3>
+        </div>
+      </div>
+      <div class="banner-img-men">
+        <div class="banner-text">
+          <h1>COMFORT</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section delivery">
+          <h3>DELIVERY</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut. Stet clita kasd gubergren, no sea
+            takimata sanctus est.
+          </p>
+        </div>
+        <div class="footer-section social-media">
+          <h3>FOLLOW US ON SOCIAL MEDIA</h3>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-snapchat-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <div class="search-box">
+            <input
+              class="search"
+              type="search"
+              name="search"
+              placeholder="Search"
+            />
+            <a class="search-button" href="#"
+              ><img src="images/Search.png" alt="Search icon"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-section google-maps">
+          <img
+            src="images/location-footer.jpg"
+            alt="Photo of a fake location of the business"
+          />
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &COPY; Rainydays.com | Designed by Kristoffer Rottingen
+      </div>
+    </footer>
   </body>
 </html>
