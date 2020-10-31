@@ -88,9 +88,9 @@ i {
 /* Frontpage picture */
 .frontpage {
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)),
+  background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.005)),
     url("../images/homepage.jpg");
-  height: 85vh;
+  height: 105vh;
   padding: 0;
   justify-content: center;
   background-size: cover;
@@ -113,14 +113,15 @@ i {
 
 /* Jacket section */
 .jacket-list {
-  padding: 1rem 1rem 1rem 1rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   background-color: var(--blue);
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 50px;
 }
+
 .men h2 {
   text-decoration: underline;
   font-size: 30px;
@@ -134,7 +135,7 @@ i {
 
 .women h2 {
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 30px;
   margin: 20px;
   width: fit-content;
   position: relative;
@@ -170,7 +171,7 @@ i {
 }
 
 .banner-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.151)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.151)),
     url("../images/Cuality-backgruound.jpg");
   -webkit-background-size: cover;
   background-repeat: no-repeat;
@@ -180,7 +181,7 @@ i {
 
 .banner-text {
   position: relative;
-  top: 23%;
+  top: 20%;
   left: 3%;
   width: 45%;
   text-align: left;
@@ -250,16 +251,16 @@ footer .search-box {
 }
 
 footer .search {
-  width: 292px;
+  width: 200px;
   padding-top: 10px;
-  height: 53px;
+  height: 45px;
   border: 3px solid var(--blue);
   border-right: #fff;
 }
 
 footer .search-button {
   background-color: #fff;
-  padding: 17px 1px 12px 0px;
+  padding: 13px 10px 8px 10px;
   border: 3px solid var(--blue);
   border-left: #fff;
 }
@@ -285,7 +286,7 @@ footer .footer-bottom {
 /* Men section site */
 .frontpage-men {
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.151)),
     url("../images/Men.background.jpg");
   height: 90vh;
   padding: 0;
@@ -320,7 +321,7 @@ footer .footer-bottom {
 /* Women section site */
 .frontpage-women {
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.005)),
+  background: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.151)),
     url("../images/Women-nackground.jpg");
   height: 90vh;
   padding: 0;
@@ -334,29 +335,63 @@ footer .footer-bottom {
   position: relative;
   text-decoration: none;
   top: 35%;
-  left: -130%;
+  left: -90%;
   font-family: var(--font);
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 36px;
   text-shadow: -2px 3px #000000;
 }
+/* Women section site */
 
-.banner-img-men {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.151)),
-    url("../images/Section-background.jpg");
+/* About page */
+.about-content {
+  display: flex;
+  justify-content: inline;
+}
+
+.frontpage-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.151)),
+    url(../images/About-background.jpg);
   -webkit-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 90vh;
+  height: 100vh;
+  filter: blur(7px);
 }
 
-.women .block {
-  margin-bottom: 25px;
-  width: 100px;
-  position: relative;
-  color: var(--blue);
-  background-color: var(--blue);
-  text-align: center;
+.about-text {
+  position: absolute;
+  line-height: 30px;
+  font-family: var(--font);
+  top: 60%;
+  left: 30%;
+  transform: translate(-60%, -30%);
+  z-index: 5;
+  width: 40%;
+  text-align: left;
+  flex: 1;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
 }
-/* Women section site */
+
+.about-img {
+  position: absolute;
+  top: 60%;
+  right: -10%;
+  transform: translate(-60%, -40%);
+  z-index: 5;
+  width: 40%;
+  text-align: right;
+  padding-top: 20px;
+}
+
+.about-img img {
+  padding-top: 20px;
+}
+
+.about-text h1 {
+  padding-bottom: 30px;
+}
