@@ -395,3 +395,64 @@ footer .footer-bottom {
 .about-text h1 {
   padding-bottom: 30px;
 }
+/* About page */
+
+/* Contact page */
+.background-contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.151)),
+    url(../images/Contact-img.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 80px;
+  color: #fff;
+}
+.form {
+  width: 40%;
+  padding-right: 30px;
+}
+
+.contact-content h2 {
+  padding-bottom: 30px;
+}
+
+input,
+textarea {
+  margin-bottom: 20px;
+  padding-right: 30px;
+  border: var(--blue) solid 3px;
+}
+
+.text-contact {
+  width: 65%;
+  padding-right: 30px;
+  line-height: 30px;
+}
+
+.img-contact {
+  padding-top: 80px;
+}
+/* Contact page */
+
+/* Hiking Men Page */
+.content-jacket {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: inherit;
+  justify-content: center;
+}
+
+.jacket-img {
+  margin: 100px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Hiking Men Page */
