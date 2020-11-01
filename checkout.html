@@ -34,36 +34,104 @@
         </ul>
       </div>
     </header>
-    <main>
-      <div class="ordre">
-        <table>
-          <tr>
-            <th>Your Cart</th>
-          </tr>
-          <tr>
-            <td>
-              <div class="cart-info">
-                <img
-                  src="../CA-Web-Communications-Technology/images/HIKING HERRE cart.jpg"
-                  alt="Hiking jacket man"
-                />
-              </div>
-            </td>
-            <td>
-              <p>MEN HIKING JACKET</p>
-            </td>
-            <td>1.500 Kr</td>
-            <td>
-              <a href="index.html"><input type="number" value="1" /></a>
-            </td>
-            <td>
-              <a href="../CA-Web-Communications-Technology/index.html"
-                ><i class="fas fa-backspace"></i
-              ></a>
-            </td>
-          </tr>
-        </table>
+    <main class="cart">
+        <div class="ordre">
+            <div class="table-info">
+                <table>
+                    <tr>
+                        <th>YOUR CART</th>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div class="cart-info">
+                            <img
+                            class="cart-img"
+                            src="images/HIKING HERRE cart.jpg"
+                            alt="Hiking jacket man"
+                            />
+                        </div>
+                        </td>
+                        <td>
+                        <p>MEN HIKING JACKET</p>
+                        </td>
+                        <td>1.500 Kr</td>
+                        <td>
+                        <input type="number" value="1" /></a>
+                        </td>
+                        <td>
+                        <a href="index.html"
+                            ><img
+                            class="delete-button"
+                            src="images/Delete-button.png"
+                            alt="Delete-button"
+                        /></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="payment">
+                <h2>PAYMENT</h2>
+                <form>
+                    <h3>Card details</h3>
+                    <label for="c-name">Cardsholder name</label>
+                    <input type="text" name="Cardsholder Name" id="heading" value="Cardsholder Name" />
+                    <label for="c-number">Card number</label>
+                    <input type="text" name="Card Number" id="heading" value="Card Number" />
+                    <label for="exp-date">EXP Date</label>
+                    <input type="text" name="EXP Date" id="heading" value="EXP Date" />
+                    <label for="cvv">CVV</label>
+                    <input type="text" name="CVV" id="heading" value="CVV" />
+                </form>
+                <a href="success.html"> CHECKOUT</a>
+            </div>
+        </div>
+      <div class="total-price">
+          <table>
+              <tr>
+                  <td class="sub">SUBTOTAL</td>
+                  <td>1.500Kr </td>
+              </tr>
+          </table>
       </div>
     </main>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section delivery">
+            <h3>DELIVERY</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut. Stet clita kasd gubergren, no sea
+              takimata sanctus est.
+            </p>
+          </div>
+          <div class="footer-section social-media">
+            <h3>FOLLOW US ON SOCIAL MEDIA</h3>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-snapchat-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <div class="search-box">
+              <input
+                class="search"
+                type="search"
+                name="search"
+                placeholder="Search"
+              />
+              <a class="search-button" href="#"
+                ><img src="images/Search.png" alt="Search icon"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-section google-maps">
+            <img
+              src="images/location-footer.jpg"
+              alt="Photo of a fake location of the business"
+            />
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &COPY; Rainydays.com | Designed by Kristoffer Rottingen
+        </div>
+      </footer>
   </body>
 </html>

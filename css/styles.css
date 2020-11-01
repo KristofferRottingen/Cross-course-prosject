@@ -14,7 +14,7 @@ body {
 
 main {
   margin: 0;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 /* Nav erea */
@@ -192,6 +192,7 @@ i {
 }
 
 .banner-text p {
+  display: left;
   padding: 10px 10px 40px 20px;
   line-height: 30px;
 }
@@ -667,16 +668,25 @@ input {
 /* canoeing women page */
 
 /* Cart&Checout page */
+
+main .cart {
+  margin: 0;
+  min-height: 80vh;
+}
 .ordre {
-  margin: 80px 50px;
+  display: flex;
+  flex-direction: row;
 }
 
-table {
-  width: 70%;
+.table-info {
+  width: 100%;
   border-collapse: collapse;
+  margin-top: 80px;
+  margin-left: 50px;
 }
 
 .cart-info {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -688,7 +698,7 @@ th {
 }
 
 td {
-  padding: 5px 10px;
+  padding: 5px 35px;
 }
 
 td input {
@@ -698,8 +708,113 @@ td input {
   border: 2px solid var(--blue);
 }
 
-td img {
+td a .delete-button {
+  width: 45px;
+  height: 35px;
+}
+
+td .cart-img {
   width: 150px;
   height: 150px;
   margin-right: 20px;
+  box-shadow: 0px 0px 10px 2px #000000;
 }
+
+.total-price {
+  width: 51rem;
+  border-top: 4px solid var(--blue);
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.total-price .sub {
+  padding-right: 35rem;
+}
+
+.payment {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 2rem 10rem 3rem 10rem;
+  line-height: 20px;
+  box-shadow: 0px 0px 10px 2px #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.payment a {
+  font-size: 15px;
+  padding: 10px 20px;
+  color: var(--blue);
+  background-color: #fff;
+  border: 2px solid var(--blue);
+  box-shadow: 0px 0px 10px 2px #000000;
+  transition: all 0.3s;
+}
+
+.payment a:hover {
+  background-color: #7f4f38;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+}
+
+#heading {
+  box-shadow: 0px 0px 5px 1px #000000;
+}
+
+label {
+  display: none;
+}
+/* Cart&Checout page */
+
+/* Checkout succsess */
+.background-success {
+  background-image: url(../images/success-background.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.text-success {
+  position: absolute;
+  line-height: 30px;
+  font-family: var(--font);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: 5;
+  width: 40%;
+  text-align: center;
+  flex: 1;
+  color: var(--blue);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+}
+
+.text-success a {
+  background-color: #fff;
+  color: var(--blue);
+  padding: 4px 7px;
+  border: 2px solid var(--blue);
+  box-shadow: 0px 0px 10px 2px #000000;
+  transition: all 0.3s;
+}
+
+.text-success a:hover {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 4px 7px;
+  border: 2px solid var(--blue);
+  box-shadow: 0px 0px 10px 2px #000000;
+  transition: all 0.3s;
+}
+
+/* Checkout succsess */
+
+/* Media Queries */
