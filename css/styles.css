@@ -442,6 +442,15 @@ textarea {
 /* Contact page */
 
 /* Hiking Men Page */
+
+.background-jackets {
+  background-image: url(../images/Hiking-background.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
 .content-jacket {
   display: flex;
   flex-direction: row;
@@ -450,9 +459,210 @@ textarea {
 }
 
 .jacket-img {
-  margin: 100px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  margin: 150px 100px 100px 100px;
+  padding: 30px 10px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
+.text-container {
+  margin: 100px 0px 0px 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  background-color: #433f34;
+  color: #fff;
+  box-shadow: 0px 0px 15px 2px #000000;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  line-height: 40px;
+  margin-left: 5rem;
+  width: 400px;
+}
+
+.right-text {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-left: 8rem;
+  padding-top: 4rem;
+  line-height: 30px;
+  margin-right: 4rem;
+}
+
+#xs,
+#s,
+#m,
+#l,
+#xl {
+  display: none;
+}
+
+#xs:checked + label,
+#s:checked + label,
+#m:checked + label,
+#l:checked + label,
+#xl:checked + label {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.sizes label {
+  border: 3px solid var(--blue);
+  padding: 2px 15px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+label {
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--blue);
+  transition: all 0.3s;
+}
+
+label:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+input {
+  outline: none;
+}
+
+.atc {
+  text-decoration: none;
+  color: var(--blue);
+  background-color: #fff;
+  margin-top: 2rem;
+  padding: 5px 0px;
+  border: 3px solid var(--blue);
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 0px 7px 1px #000000;
+  transition: all 0.3s;
+}
+
+.atc:hover {
+  background-color: var(--blue);
+  color: #fff;
+  transition: all 0.3s;
+}
 /* Hiking Men Page */
+
+/* Skiing men page */
+.background-jackets-skiing {
+  background-image: url(../images/Skiing-background.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.text-container-skiing {
+  margin: 100px 0px 0px 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  background-color: #5c8ba5;
+  color: #fff;
+  box-shadow: 0px 0px 15px 2px #000000;
+}
+/* Skiing men page */
+
+/* Camping men page */
+.background-jackets-camping {
+  background-image: url(../images/Camping.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.text-container-camping {
+  margin: 100px 0px 0px 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ac6137;
+  color: #fff;
+  box-shadow: 0px 0px 15px 2px #000000;
+}
+/* Camping men page */
+
+/* Canoeing men page */
+.background-jackets-canoeing {
+  background-image: url(../images/canoeing-background.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.text-container-canoeing {
+  margin: 100px 0px 0px 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  background-color: #788945;
+  color: #fff;
+  box-shadow: 0px 0px 15px 2px #000000;
+}
+/* Canoeing men page */
+
+/* Hiking women page */
+.text-container-hiking-women {
+  margin: 100px 0px 0px 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  background-color: #818286;
+  color: #fff;
+  box-shadow: 0px 0px 15px 2px #000000;
+}
+/* Hiking women page */
+
+/* Skiing women page */
+.text-container-skiing-women {
+  margin: 100px 0px 0px 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  background-color: #74b5c1;
+  color: #fff;
+  box-shadow: 0px 0px 15px 2px #000000;
+}
+/* Skiing women page */
+
+/* camping women page */
+.text-container-camping-women {
+  margin: 100px 0px 0px 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  background-color: #966368;
+  color: #fff;
+  box-shadow: 0px 0px 15px 2px #000000;
+}
+/* camping women page */
+
+/* canoeing women page */
+.text-container-canoeing-women {
+  margin: 100px 0px 0px 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  background-color: #6a5284;
+  color: #fff;
+  box-shadow: 0px 0px 15px 2px #000000;
+}
+
+/* canoeing women page */
