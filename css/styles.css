@@ -18,49 +18,57 @@ main {
 }
 
 /* Nav erea */
-.top-navigation {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-}
-
-li,
-a {
-  font-family: var(--font);
-  font-weight: 500;
-  font-size: 16px;
-  color: #0a3641;
-  text-decoration: none;
-}
-
-.nav__links {
-  list-style: none;
-}
-
-.nav__links li {
-  display: inline-block;
-  padding: 5px 20px;
-}
-
-i {
-  font-size: 25px;
-  padding: 9px 100px;
-  transition: all 0.3s ease 0s;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 10px;
-}
-
 .logo {
-  width: 200px;
-  cursor: pointer;
+  padding-top: 10px;
+  padding-left: 40px;
+  max-width: 200px;
 }
 
+.upper {
+  transition: 0.3s all;
+}
+
+.upper:hover {
+  text-shadow: 1px 1px 1px #000000;
+  transition: 0.3s all;
+}
+
+.cta i {
+  font-size: 25px;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  font-size: 16px;
+  font-family: var(--font);
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.hamburger-label {
+  float: right;
+  color: var(--green);
+  padding: 10px;
+  font-size: 1.5rem;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: inline-block;
+}
+
+/* Men woman section */
 .men-woman {
   display: flex;
   background-color: #0a3641;
@@ -83,6 +91,15 @@ i {
   color: #ffffff;
   padding: 0px 20px 0px 20px;
 }
+
+.hov {
+  transition: all 0.3s;
+}
+
+.hov:hover {
+  text-shadow: 1px 1px 1px #ffffff;
+  transition: all 0.3s;
+}
 /* Nav erea */
 
 /* Frontpage picture */
@@ -90,7 +107,7 @@ i {
   display: flex;
   background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.005)),
     url("../images/homepage.jpg");
-  height: 105vh;
+  height: 90vh;
   padding: 0;
   justify-content: center;
   background-size: cover;
@@ -112,53 +129,41 @@ i {
 /* Frontpage picture */
 
 /* Jacket section */
-.jacket-list {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.jacket-list-men,
+.jacket-list-women {
   display: flex;
-  background-color: var(--blue);
   justify-content: space-evenly;
+  padding: 3rem 1.5rem 3rem 1.5rem;
   align-items: center;
   flex-wrap: wrap;
+  background-color: var(--blue);
+  color: white;
 }
 
-.men h2 {
-  text-decoration: underline;
+.jacket-heading h2 {
+  margin: 0;
+  padding: 2rem 2rem;
   font-size: 30px;
-  margin: 20px;
-  width: fit-content;
-  position: relative;
-  color: #fff;
-  background-color: var(--blue);
   text-align: center;
+  background-color: var(--blue);
+  color: #fff;
+  transition: all 0.3s;
 }
 
-.women h2 {
-  text-decoration: underline;
-  font-size: 30px;
-  margin: 20px;
-  width: fit-content;
-  position: relative;
-  color: #fff;
-  background-color: var(--blue);
-  text-align: center;
+.jacket-heading h2:hover {
+  text-shadow: -2px 3px 3px #000000;
+  transition: all 0.3s;
 }
 
-.block {
-  margin-bottom: 25px;
-  width: 100px;
-  position: relative;
-  color: var(--blue);
-  background-color: var(--blue);
-  text-align: center;
+.jacket-list-men img,
+.jacket-list-women img {
+  transition: all 0.3s;
 }
 
-.jacket-list h3 {
-  line-height: 10px;
-  margin-top: 5px;
-  text-align: left;
-  color: #fff;
-  background-color: var(--blue);
+.jacket-list-men img:hover,
+.jacket-list-women img:hover {
+  box-shadow: 0px 0px 10px 2px #000000;
+  transition: all 0.3s;
 }
 /* Jacket section */
 
@@ -173,7 +178,7 @@ i {
 .banner-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.151)),
     url("../images/Cuality-backgruound.jpg");
-  -webkit-background-size: cover;
+  -webkit-backface-visibility: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 90vh;
@@ -195,6 +200,7 @@ i {
   display: left;
   padding: 10px 10px 40px 20px;
   line-height: 30px;
+  margin: 0;
 }
 /* Banner section */
 
@@ -257,13 +263,6 @@ footer .search {
   height: 45px;
   border: 3px solid var(--blue);
   border-right: #fff;
-}
-
-footer .search-button {
-  background-color: #fff;
-  padding: 13px 10px 8px 10px;
-  border: 3px solid var(--blue);
-  border-left: #fff;
 }
 
 footer .google-maps {
@@ -816,4 +815,58 @@ label {
 }
 /* Checkout succsess */
 
-/* Media Queries */
+/* Media queries  */
+
+@media (max-width: 1000px) {
+  footer {
+    align-items: center;
+    height: auto;
+  }
+
+  footer .footer-content {
+    height: auto;
+    flex-direction: column;
+  }
+
+  footer .delivery h3,
+  footer .delivery p {
+    width: auto;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 750px) {
+  header nav {
+    padding-top: 30px;
+    display: block;
+    float: right;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  header nav ul {
+    display: flex;
+  }
+
+  header nav li {
+    display: inline-block;
+  }
+
+  header nav a {
+    padding: 20px 35px;
+  }
+}
+
+@media (max-width: 720px) {
+  .banner-img {
+    height: auto;
+  }
+
+  .banner-text {
+    position: inherit;
+    width: auto;
+  }
+}
