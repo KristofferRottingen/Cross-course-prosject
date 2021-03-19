@@ -522,6 +522,7 @@ label:hover {
 
 input {
   outline: none;
+  padding: 5px 10px;
 }
 
 .atc {
@@ -736,6 +737,7 @@ form {
 .payment a {
   font-size: 15px;
   padding: 10px 20px;
+  text-decoration: none;
   color: var(--blue);
   background-color: #fff;
   border: 2px solid var(--blue);
@@ -821,6 +823,14 @@ label {
   .text-container-skiing {
     margin-right: 10px;
   }
+
+  .table-info {
+    margin-left: auto;
+  }
+
+  .payment {
+    padding: 3rem 6rem;
+  }
 }
 
 @media (max-width: 1180px) {
@@ -872,6 +882,41 @@ label {
 @media (max-width: 1100px) {
   .second_p {
     display: none;
+  }
+
+  .ordre {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .table-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-info th {
+    text-align: center;
+  }
+
+  .jacket-info {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .delete-button {
+    display: none;
+  }
+
+  .total-price {
+    display: none;
+  }
+
+  .payment {
+    margin-bottom: 40px;
   }
 }
 
