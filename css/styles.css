@@ -884,6 +884,11 @@ label {
     display: none;
   }
 
+  td .cart-img {
+    width: auto;
+    height: auto;
+    margin-right: 0;
+  }
   .ordre {
     flex-direction: column;
     align-items: center;
