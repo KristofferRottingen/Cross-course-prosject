@@ -10,5 +10,5 @@ console.log(id);
 console.log(image);
 
 if (id === "hiking-men") {
-    image.style.backgroundImage = "url(../../images/CAMPING.png)";
+    image.style.backgroundImage = "url(../images/CAMPING.png)";
 }
