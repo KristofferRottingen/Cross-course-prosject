@@ -952,6 +952,10 @@ label {
     display: none;
   }
 
+  .banner-text {
+    position: inherit;
+    width: auto;
+  }
   .about-text {
     line-height: 20px;
   }
