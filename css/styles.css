@@ -115,11 +115,13 @@ nav a {
   background-position: center center;
 }
 
+.punshline {
+  padding-top: 200px;
+  text-align: center;
+}
+
 .punshline h1 {
-  position: relative;
-  text-decoration: none;
-  top: 25%;
-  left: -25%;
+  display: flex;
   font-family: var(--font);
   color: #ffffff;
   text-transform: uppercase;
@@ -297,14 +299,12 @@ footer .footer-bottom {
 }
 
 .headline h1 {
-  position: relative;
-  text-decoration: none;
-  top: 35%;
-  left: -130%;
+  padding-top: 200px;
+  text-align: center;
   font-family: var(--font);
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
   text-shadow: -2px 3px #000000;
 }
 
@@ -331,17 +331,6 @@ footer .footer-bottom {
   background-position: center center;
 }
 
-.headline h1 {
-  position: relative;
-  text-decoration: none;
-  top: 35%;
-  left: -90%;
-  font-family: var(--font);
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 36px;
-  text-shadow: -2px 3px #000000;
-}
 /* Women section site */
 
 /* About page */
@@ -817,6 +806,75 @@ label {
 
 /* Media queries  */
 
+@media (max-width: 1260px) {
+  .jacket-img {
+    margin-left: auto;
+  }
+
+  .text-container-hiking-women,
+  .text-container-skiing-women,
+  .text-container-canoeing-women,
+  .text-container-campin-women,
+  .text-container-hiking,
+  .text-container-camping,
+  .text-container-canoeing,
+  .text-container-skiing {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .background-jackets,
+  .background-jackets-skiing,
+  .background-jackets-canoeing,
+  .background-jackets-camping {
+    height: auto;
+  }
+  .content-jacket {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jacket-img {
+    margin: 30px 0px 0px 0px;
+  }
+
+  .text-container-hiking-women,
+  .text-container-skiing-women,
+  .text-container-canoeing-women,
+  .text-container-campin-women,
+  .text-container-hiking,
+  .text-container-camping,
+  .text-container-canoeing,
+  .text-container-skiing {
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-text {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .right-text {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1100px) {
+  .second_p {
+    display: none;
+  }
+}
+
 @media (max-width: 1000px) {
   footer {
     align-items: center;
@@ -833,6 +891,30 @@ label {
     width: auto;
     text-align: center;
     padding-left: 0;
+  }
+
+  .background-contact {
+    height: auto;
+  }
+
+  .contact-content {
+    display: block;
+  }
+}
+
+@media (max-width: 970px) {
+  .about-img {
+    display: none;
+  }
+
+  .about-text {
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .punshline {
+    padding-left: auto;
   }
 }
 
@@ -867,6 +949,56 @@ label {
 
   .banner-text {
     position: inherit;
+    width: auto;
+  }
+
+  .about-text {
+    left: 50%;
+  }
+
+  .about-text h1 {
+    font-size: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 16px;
+  }
+
+  .about-text p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .left-text h1 {
+    font-size: 25px;
+  }
+
+  .left-text h2 {
+    font-size: 20px;
+  }
+
+  .right-text h2 {
+    font-size: 20px;
+  }
+
+  .right-text p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .img-contact {
+    display: none;
+  }
+
+  .contact-content {
+    padding: 40px;
+  }
+
+  .text-contact,
+  .form {
     width: auto;
   }
 }
