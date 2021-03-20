@@ -1,6 +1,4 @@
 
-
-
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("i");
@@ -11,6 +9,8 @@ const containerColor = document.querySelector("#text-container-product");
 const productHeading = document.querySelector(".left-text h1");
 
 console.log(id);
+
+/* Id to the product page */
 
 if (id === "hiking-men") {
     image.innerHTML = `<img src="../images/HIKING HERRE test.png"
