@@ -811,6 +811,7 @@ label {
 @media (max-width: 1260px) {
   .jacket-img {
     margin-left: auto;
+    margin-right: auto;
   }
 
   .text-container-hiking-women,
@@ -830,52 +831,6 @@ label {
 
   .payment {
     padding: 3rem 6rem;
-  }
-}
-
-@media (max-width: 1180px) {
-  .background-jackets,
-  .background-jackets-skiing,
-  .background-jackets-canoeing,
-  .background-jackets-camping {
-    height: auto;
-  }
-  .content-jacket {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .jacket-img {
-    margin: 30px 0px 0px 0px;
-  }
-
-  .text-container-hiking-women,
-  .text-container-skiing-women,
-  .text-container-canoeing-women,
-  .text-container-campin-women,
-  .text-container-hiking,
-  .text-container-camping,
-  .text-container-canoeing,
-  .text-container-skiing {
-    flex-direction: column;
-    padding: 20px;
-    margin: 20px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .left-text {
-    width: 300px;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-  }
-
-  .right-text {
-    width: 300px;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
   }
 }
 
@@ -922,6 +877,52 @@ label {
 
   .payment {
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .background-jackets,
+  .background-jackets-skiing,
+  .background-jackets-canoeing,
+  .background-jackets-camping {
+    height: auto;
+  }
+  .content-jacket {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jacket-img {
+    margin: 30px 0px 0px 0px;
+  }
+
+  .text-container-hiking-women,
+  .text-container-skiing-women,
+  .text-container-canoeing-women,
+  .text-container-camping-women,
+  .text-container-hiking,
+  .text-container-camping,
+  .text-container-canoeing,
+  .text-container-skiing {
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-text {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .right-text {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
   }
 }
 
