@@ -149,7 +149,12 @@ nav a {
   text-align: center;
   background-color: var(--blue);
   color: #fff;
+  text-decoration: none;
   transition: all 0.3s;
+}
+
+.jacket-heading a {
+  color: white;
 }
 
 .jacket-heading h2:hover {
@@ -793,6 +798,7 @@ label {
   padding: 4px 7px;
   border: 2px solid var(--blue);
   box-shadow: 0px 0px 10px 2px #000000;
+  text-decoration: none;
   transition: all 0.3s;
 }
 
