@@ -44,33 +44,32 @@
       </div>
       <div class="background-contact">
         <div class="contact-content">
-          <div class="form">
-            <h2>CONTACT US</h2>
-            <input
-              class="input-form"
-              type="text"
-              name="full-name"
-              id="full-name"
-              placeholder="Name"
-            />
-            <input
-              class="input-form"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-            />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Question/Comments"
-            ></textarea>
-            <button>
-              <a href="index.html">Send</a>
-            </button>
-          </div>
+          <form id="contact-form">
+            <div>
+                <label>
+                    Name (required)
+                    <input name="name" id="name" />
+                </label>
+                <div class="error-contactForm" id="nameError">Your name is missing</div>
+              </div>
+
+            <div>
+                <label>
+                    Email (required)
+                    <input name="email" id="email" />
+                </label>
+                <div class="error-contactForm" id="emailError">This is not a valid email</div>
+            </div>
+
+            <div>
+                <label class="message">
+                     Massage (required)
+                    <input name="adresse" id="adresse" />
+                </label>
+                <div class="error-contactForm" id="adresseError">This section is required</div>
+            </div>
+            <button>Submit</button>
+       </form> 
           <div class="text-contact">
             <h2>YOUR FEEDBACK</h2>
             <p>
@@ -131,5 +130,6 @@
         &COPY; Rainydays.com | Designed by Kristoffer Rottingen
       </div>
     </footer>
+    <script src="/js/contact.js"></script>
   </body>
 </html>
