@@ -17,9 +17,9 @@ async function getProductInfo() {
             console.log(data[i].name)
 
             jacketListMen.innerHTML += `<div>
-            <a href="product.html?i=hiking-men&h=HIKING"><img src="images/HIKING HERRE test.png" alt="Hiking herre jakke"/></a>
-            <h3>HIKING</h3>
-            <h3>kr 1500,-</h3>
+            <a href="product.html?id=${data[i].id}"><img src="images/HIKING HERRE test.png" alt="Hiking herre jakke"/></a>
+            <h3>${data[i].name}</h3>
+            <h3>${data[i].price}</h3>
           </div>`;
 
         }
