@@ -1,6 +1,6 @@
 const jacketListMen = document.querySelector(".jacket-list-men");
 
-const url = "https://cms-ca.kristoffer-flower.store/wp-json/wc/store/products";
+const url = "https://cms-ca.kristoffer-flower.store/wp-json/wc/store/products?category=20";
 
 async function getProductInfo() {
     
@@ -16,14 +16,15 @@ async function getProductInfo() {
         for(let i = 0; i < data.length; i++){
             console.log(data[i].id)
 
-            if(i === 7 || i === 5 || i === 3 || i === 1){
-                
-                jacketListMen.innerHTML += `<div>
+            if(i === 4){
+                break;
+            };
+
+            jacketListMen.innerHTML += `<div>
                 <a href="product.html?id=${data[i].id}"><img src="${data[i].images[0].src}"/></a>
                 <h3>${data[i].name}</h3>
                 <h3>${data[i].prices.price}${data[i].prices.currency_symbol}</h3>
-                </div>`;
-            };
+            </div>`;
         }
     } catch (error) {
         container.innerHTML = errorMessage();
