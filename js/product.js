@@ -16,10 +16,14 @@ async function getProductInfo() {
         for(let i = 0; i < data.length; i++){
             console.log(data[i].name)
 
+            if (i === 4){
+				break;
+			}
+
             jacketListMen.innerHTML += `<div>
-            <a href="product.html?id=${data[i].id}"><img src="images/HIKING HERRE test.png" alt="Hiking herre jakke"/></a>
+            <a href="product.html?id=${data[i].id}"><img src="${data[i].images[0].src}"/></a>
             <h3>${data[i].name}</h3>
-            <h3>${data[i].price}</h3>
+            <h3>${data[i].prices.price}</h3>
           </div>`;
 
         }
@@ -27,3 +31,5 @@ async function getProductInfo() {
         container.innerHTML = errorMessage();
     }
 };
+
+getProductInfo();
