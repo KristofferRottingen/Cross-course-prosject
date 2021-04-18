@@ -21,13 +21,13 @@ async function getProductInfoWomen() {
             };
 
             jacketListWomen.innerHTML += `<div>
-                <a href="product.html?id=${products[i].id}"><img src="${products[i].images[0].src}"/></a>
+                <a href="product.html?id=${products[i].id}&h=${data[i].name}"><img src="${products[i].images[0].src}"/></a>
                 <h3>${products[i].name}</h3>
                 <h3>${products[i].prices.price}${products[i].prices.currency_symbol}</h3>
             </div>`;
         }
     } catch (error) {
-        container.innerHTML = errorMessage();
+        
     }
 };
 
