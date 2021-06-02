@@ -4,6 +4,7 @@
   --blue: #0a3641;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --brown: #7f4f38;
 }
 
 body {
@@ -33,7 +34,7 @@ main {
   transition: 0.3s all;
 }
 
-.cta i {
+.cart i {
   font-size: 25px;
 }
 
@@ -56,6 +57,20 @@ nav a {
   color: var(--blue);
 }
 
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: var(--blue);
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
 .hamburger-label {
   float: right;
   color: var(--green);
@@ -73,9 +88,15 @@ nav a {
   display: flex;
   background-color: #0a3641;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 0;
   padding: 0;
+}
+
+.men-woman ul {
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .men-woman li {
@@ -92,13 +113,18 @@ nav a {
   padding: 0px 20px 0px 20px;
 }
 
-.hov {
-  transition: all 0.3s;
+.men-woman a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #fff;
+  transition: width 0.3s;
 }
 
-.hov:hover {
-  text-shadow: 1px 1px 1px #ffffff;
-  transition: all 0.3s;
+.men-woman a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 /* Nav erea */
 
@@ -130,11 +156,35 @@ nav a {
 }
 
 .ctas {
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+.ctas p {
+  color: white;
+  font-size: 20px;
+  text-shadow: 3px 2px #000000;
+}
+.cta {
+  display: inline-block;
+  padding: 12px 19px;
+  border-radius: 1rem;
+  background-color: var(--blue);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background-color: var(--brown);
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 10px 2px #000000;
+}
+
 /* Frontpage picture */
 
 /* Loader */
@@ -177,7 +227,7 @@ nav a {
   background-color: var(--blue);
   color: #fff;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .jacket-heading a {
@@ -186,18 +236,18 @@ nav a {
 
 .jacket-heading h2:hover {
   text-shadow: -2px 3px 3px #000000;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .jacket-list-men img,
 .jacket-list-women img {
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 
 .jacket-list-men img:hover,
 .jacket-list-women img:hover {
   filter: drop-shadow(11px 7px 12px #000);
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 /* Jacket section */
 
@@ -460,7 +510,7 @@ input {
 
 .button:hover {
   box-shadow: 0px 0px 10px 2px #000000;
-  background-color: #7f4f38;
+  background-color: var(--brown);
   color: white;
   transition: all 0.3s;
 }
@@ -1052,10 +1102,6 @@ td .cart-img {
 
   .hamburger-label {
     display: none;
-  }
-
-  header nav ul {
-    display: flex;
   }
 
   header nav li {
