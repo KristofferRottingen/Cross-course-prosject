@@ -133,7 +133,8 @@ nav a:hover::after {
   display: flex;
   background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.005)),
     url("../images/homepage.jpg");
-  height: 90vh;
+  min-height: 90vh;
+  max-height: 110vh;
   padding: 0;
   justify-content: center;
   background-size: cover;
@@ -230,13 +231,21 @@ nav a:hover::after {
   transition: all 0.3s ease;
 }
 
-.jacket-heading a {
-  color: white;
+.jacket-heading h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #fff;
+  transition: width 0.3s;
+}
+.jacket-heading h2:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 
-.jacket-heading h2:hover {
-  text-shadow: -2px 3px 3px #000000;
-  transition: all 0.3s ease;
+.jacket-heading a {
+  text-decoration: none;
 }
 
 .jacket-list-men img,
