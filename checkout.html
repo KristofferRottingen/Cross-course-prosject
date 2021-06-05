@@ -77,41 +77,42 @@
             </div>
             <div class="payment">
                 <h2>PAYMENT</h2>
-                <form>
+                <form id="card-form">
                     <h3>Card details</h3>
                     <div>
                       <label>
                           Cardsholder Name (required)
                           <input name="name" id="name" />
                       </label>
-                      
+                      <div class="error-contactForm" id="nameError">Your name is missing</div>
                     </div>
       
                     <div>
-                        <label>
-                            Card number (required)
-                            <input name="number" id="cardNumber" />
-                        </label>
-                        
+                      <label>
+                          Card number (required)
+                          <input name="number" id="cardNumber" />
+                      </label>
+                      <div class="error-contactForm" id="numberError">This is not a valid card</div>
                     </div>
         
                     <div>
-                        <label>
-                            EXP Date (required)
-                            <input name="expDate" id="expDate" />
-                        </label>
-                        
+                      <label>
+                          EXP Date (required)
+                          <input name="expDate" id="expDate" />
+                      </label>
+                      <div class="error-contactForm" id="expDateError">This is not valid</div>
                     </div>
 
                     <div>
                       <label>
-                           CVV (required)
+                          CVV (required)
                           <input name="CVV" id="CVV" />
                       </label>
-    
+                      <div class="error-contactForm" id="cvvError">This is not a valid CVV code</div>
                     </div>
+                    <button class="button">Checkout</button>
                 </form>
-                <a href="success.html"> CHECKOUT</a>
+                
             </div>
         </div>
       <div class="total-price">
@@ -160,5 +161,6 @@
           &COPY; Rainydays.com | Designed by Kristoffer Rottingen
         </div>
       </footer>
+      <script src="js/card.js"></script>
   </body>
 </html>

@@ -19,6 +19,8 @@ async function fetchProducts() {
 
         console.log(info);
 
+        title.innerHTML = `${info.name} | RainyDays`;
+
         image.innerHTML = `<img src="${info.images[0].src}" alt="${info.name} Jacket" />`;
         productHeading.innerHTML = `${info.name}`;
 
@@ -65,4 +67,4 @@ const productHeading = document.querySelector(".left-text h1");
 
 
 
-// title.innerHTML = `${} | RainyDays`;
+
