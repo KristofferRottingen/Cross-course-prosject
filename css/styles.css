@@ -111,6 +111,7 @@ nav a:hover::after {
   font-family: var(--font);
   color: #ffffff;
   padding: 0px 20px 0px 20px;
+  cursor: pointer;
 }
 
 .men-woman a::after {
